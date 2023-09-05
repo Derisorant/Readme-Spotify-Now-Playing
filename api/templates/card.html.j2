@@ -14,21 +14,21 @@ display: flex;
 flex-direction: column;
 padding: 0px 0px 50px 0px;
 align-items: center;
-background: #1f1f1f;
+background: #111111;
 border-radius: 10px;
 }
 img{
 padding:20px;
 border-radius:25px;
-filter: drop-shadow(2px 4px 10px #1f1f1f);
+filter: drop-shadow(0px 5px 10px #1f1f1f);
+box-shadow: 0px 5px 10px black;
 }
 .info{
 display: flex;
 flex-direction: column;
 text-align: center;
 font-size: larger;
-margin-top: -0.25em;
-margin-bottom: 0.25em;
+margin-top: 1em;
 }
 .song{
     margin: 0;
@@ -39,7 +39,7 @@ margin-bottom: 0.25em;
     width: 280px;
     overflow: hidden;
     overflow-wrap: break-word;
-    inline-size: 150px;
+    inline-size: 215px;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-top:2px;
@@ -79,8 +79,8 @@ margin-bottom: 0.25em;
 <div class="main">
 <img class="pic" src="data:image/jpg;base64,{{imgstr}}" width="120px"></img>
 <div class="info" xmlns="http://www.w3.org/1999/xhtml">
-<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;font: caption;padding-bottom: 3px;font-size: smaller;color: white;mix-blend-mode: normal; line-height:17px;">{{status}}</div>
-<a xmlns="http://www.w3.org/1999/xhtml" class="song" >{{songname}}</a><a class="artist" xmlns="http://www.w3.org/1999/xhtml">by {{artist}} </a>
+<div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;font: caption;padding-bottom: 3px;font-size: smaller;color: white;mix-blend-mode: normal; line-height:17px; margin-bottom: 0.5em;">{{status}}</div>
+<a xmlns="http://www.w3.org/1999/xhtml" class="song" style="margin-bottom: 0.05em;" >{{songname}}</a><a class="artist" xmlns="http://www.w3.org/1999/xhtml">by {{artist}} </a>
 <div xmlns="http://www.w3.org/1999/xhtml" style="   display: flex;    height: 26px;   flex-direction: row;    align-items: flex-end;">
     {{bars|safe}}
     </div>
