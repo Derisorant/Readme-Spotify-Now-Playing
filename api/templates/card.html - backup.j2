@@ -1,4 +1,4 @@
-<svg width="250px" height="350px" xmlns="http://www.w3.org/2000/svg" style="margin:0px">
+<svg width="480px" height="160px" xmlns="http://www.w3.org/2000/svg" style="margin:0px">
 <style>
 @font-face {
   font-family: 'josefin sans';
@@ -11,8 +11,7 @@
 <style>
 .main{
 display: flex;
-flex-direction: column;
-padding: 0px 0px 50px 0px;
+flex-direction: row;
 align-items: center;
 background: transparent;
 border-radius: 10px;
@@ -25,30 +24,21 @@ filter: drop-shadow(2px 4px 10px #1f1f1f);
 .info{
 display: flex;
 flex-direction: column;
-text-align: center;
-font-size: larger;
-margin-top: -0.25em;
-margin-bottom: 0.25em;
 }
 .song{
-    margin: 0;
     color: white;
     font-size: 27px;
     font-family: 'josefin sans';
-    font-weight: bold;
     width: 280px;
     overflow: hidden;
-    overflow-wrap: break-word;
-    inline-size: 150px;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-top:2px;
 }
 .artist{
-    margin: 0;
     color: white;
     font: caption;
-    font-size: smaller;
+    font-size: 15px;
 }
 .bar{
     display: none;
@@ -74,7 +64,7 @@ margin-bottom: 0.25em;
 <g>
 <rect xmlns="http://www.w3.org/2000/svg"/>
 <g>
-<foreignObject width="250px" height="350px">
+<foreignObject width="480px" height="160px">
 <div xmlns="http://www.w3.org/1999/xhtml">
 <div class="main">
 <img class="pic" src="data:image/jpg;base64,{{imgstr}}" width="120px"></img>
