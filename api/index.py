@@ -45,7 +45,7 @@ def spotify():
         songname = (current['item']['name'])
         artist = (current['item']['artists'][0]['name'])
         cover = (current['item']['album']['images'][0]['url'])
-        return ["Now Playing",songname,cover,artist]
+        return ["Recently Played",songname,cover,artist]
     except:
         current = sp.current_user_recently_played(limit=1)
         songname = (current['items'][0]['track']['name'])
